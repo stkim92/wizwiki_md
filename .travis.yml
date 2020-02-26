@@ -8,6 +8,9 @@ script:
   - echo 'Installing Deps!'
   - echo 'Testing!'
   - cd website
-  - yarn install
+  - yarn run build
 after_success:
-  - yarn run publish-gh-pages
+  - GIT_USER=stkim92 \
+  CURRENT_BRANCH=master \
+  USE_SSH=true \
+  yarn run publish-gh-pages # 또는 `npm run publish-gh-pages`
