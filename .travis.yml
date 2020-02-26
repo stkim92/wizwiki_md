@@ -8,4 +8,3 @@ script:
 after_success:
   - cd website
   - npm run publish-gh-pages
-  - npm start
