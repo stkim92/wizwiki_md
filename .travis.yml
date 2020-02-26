@@ -3,6 +3,11 @@ node_js:
   - "12"
 cache:
   yarn: true
+
+env:
+  GIT_USER = stkim92
+  CURRENT_BRANCH=master
+  USE_SSH=true
 script:
   - echo 'Build starts!!'
   - echo 'Installing Deps!'
@@ -10,7 +15,4 @@ script:
   - cd website
   - yarn run build
 after_success:
-  - GIT_USER=<GIT_USER> \
-  CURRENT_BRANCH=master \
-  USE_SSH=true \
-  yarn run publish-gh-pages
+  - yarn run publish-gh-pages
