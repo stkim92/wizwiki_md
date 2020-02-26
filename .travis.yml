@@ -1,10 +1,13 @@
 language: node_js
 node_js:
   - "12"
+cache:
+  yarn: true
 script:
   - echo 'Build starts!!'
   - echo 'Installing Deps!'
   - echo 'Testing!'
-after_success:
   - cd website
-  - npm run publish-gh-pages
+  - yarn install
+after_success:
+  - yarn run publish-gh-pages
