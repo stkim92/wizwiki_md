@@ -4,9 +4,9 @@ node_js:
 script:
   - echo 'Build starts!!'
   - echo 'Installing Deps!'
-  - npm build
+  - npm run build
   - echo 'Testing!'
 after_success:
-  - npm run publish-ph-pages
   - cd my-website
+  - npm run publish-ph-pages
   - npm start
