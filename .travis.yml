@@ -5,9 +5,9 @@ cache:
   yarn: true
 
 env:
-  GIT_USER = stkim92
-  CURRENT_BRANCH=master
-  USE_SSH=true
+  - GIT_USER = stkim92
+  - CURRENT_BRANCH=master
+  - USE_SSH=true
 script:
   - echo 'Build starts!!'
   - echo 'Installing Deps!'
