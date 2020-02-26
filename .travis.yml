@@ -4,7 +4,6 @@ node_js:
 script:
   - echo 'Build starts!!'
   - echo 'Installing Deps!'
-  - npm run build
   - echo 'Testing!'
 after_success:
   - cd website
