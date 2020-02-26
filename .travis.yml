@@ -8,4 +8,5 @@ script:
   - echo 'Testing!'
 after_success:
   - npm run publish-ph-pages
+  - cd my-website
   - npm start
