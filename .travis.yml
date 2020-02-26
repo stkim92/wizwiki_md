@@ -6,9 +6,6 @@ script:
   - echo 'Installing Deps!'
   - npm build
   - echo 'Testing!'
-  - npm run test:prod
-install:
-  - npm install -g firebase-tools
 after_success:
   - npm run publish-ph-pages
   - npm start
