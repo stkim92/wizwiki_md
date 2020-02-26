@@ -7,6 +7,6 @@ script:
   - npm run build
   - echo 'Testing!'
 after_success:
-  - cd my-website
-  - npm run publish-ph-pages
+  - cd website
+  - npm run publish-gh-pages
   - npm start
