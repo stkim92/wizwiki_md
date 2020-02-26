@@ -5,7 +5,7 @@ cache:
   yarn: true
 
 env:
-  - GIT_USER = stkim92
+  - GIT_USER=stkim92
   - CURRENT_BRANCH=master
   - USE_SSH=true
 script:
